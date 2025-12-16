@@ -12,3 +12,13 @@ const errorBox = document.getElementById("errorBox");
 const recentWrapper = document.getElementById("recentWrapper");
 const recentDropdown = document.getElementById("recentDropdown");
 const unitToggle = document.getElementById("unitToggle");
+
+
+//Display errors
+function showError(message) {
+  errorBox.innerHTML = `
+    <div class="card p-3 rounded-md border border-red-400/30">
+      <strong class="text-red-200">Error:</strong>
+      <p class="text-sm text-white/90 mt-1">${escapeHtml(message)}</p>
+    </div>`;
+}
