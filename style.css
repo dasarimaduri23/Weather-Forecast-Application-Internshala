@@ -10,13 +10,14 @@
   background-size: 2px 20px;
   animation: rain 0.6s linear infinite;
 }
+/*used animations*/
 
 @keyframes rain {
   from { background-position: 0 0; }
   to { background-position: 0 20px; }
 }
 
-
+/*differnt backgrounds based on weather*/
 .bg-clear {
   background: linear-gradient(180deg, #fef3b9 0%, #ffd166 100%);
   color: #1f2937;
@@ -42,7 +43,7 @@
   color: #fff;
 }
 
-
+/* card layout design*/
 .card {
   background: rgba(255,255,255,0.08);
   backdrop-filter: blur(6px);
