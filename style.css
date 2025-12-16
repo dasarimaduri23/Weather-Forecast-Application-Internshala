@@ -1,0 +1,50 @@
+
+.rain-overlay {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  mix-blend-mode: screen;
+  opacity: 0.35;
+  background-image: linear-gradient(transparent 60%, rgba(255,255,255,0.04) 61%);
+  background-size: 2px 20px;
+  animation: rain 0.6s linear infinite;
+}
+
+@keyframes rain {
+  from { background-position: 0 0; }
+  to { background-position: 0 20px; }
+}
+
+
+.bg-clear {
+  background: linear-gradient(180deg, #fef3b9 0%, #ffd166 100%);
+  color: #1f2937;
+}
+.bg-clouds {
+  background: linear-gradient(180deg, #d7dfe9 0%, #b0becf 100%);
+  color: #0f172a;
+}
+.bg-rain {
+  background: linear-gradient(180deg, #89a8c6 0%, #4b6b84 100%);
+  color: #f8fafc;
+}
+.bg-snow {
+  background: linear-gradient(180deg, #eef6fb 0%, #dbeefb 100%);
+  color: #0f172a;
+}
+.bg-thunder {
+  background: linear-gradient(180deg, #3b3b98 0%, #121063 100%);
+  color: #fff;
+}
+.bg-default {
+  background: linear-gradient(180deg, #6dd5fa 0%, #2980b9 100%);
+  color: #fff;
+}
+
+
+.card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
