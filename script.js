@@ -32,11 +32,11 @@ function showError(message) {
     </div>`;
 }
 
-
+//clear errors
 function clearError() {
   errorBox.innerHTML = "";
 }
-
+//escaping extra symbols
 function escapeHtml(str) {
   return String(str)
     .replaceAll("&", "&amp;")
@@ -289,3 +289,11 @@ function handleUnitToggle() {
   if (!currentWeatherData) return;
   renderCurrent(currentWeatherData);
 }
+
+//handling events
+searchBtn.addEventListener("click", handleSearch);
+locBtn.addEventListener("click", handleLocation);
+unitToggle.addEventListener("change", handleUnitToggle);
+renderRecent();
+
+console.log("✅ Weather App ready!");
