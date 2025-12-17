@@ -41,3 +41,7 @@ HTML
 CSS (Tailwind CSS)
 JavaScript
 OpenWeatherMap API
+
+
+## GIT HUB account link:
+- https://github.com/dasarimaduri23/Weather-Forecast-Application-Internshala
